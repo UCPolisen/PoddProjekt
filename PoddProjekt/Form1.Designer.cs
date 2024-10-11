@@ -34,9 +34,9 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(800, 450);
+            ClientSize = new System.Drawing.Size(803, 516);
             Name = "Form1";
-            Text = "Form1";
+            Text = "PoddApp";
             Load += Form1_Load;
             ResumeLayout(false);
         }
