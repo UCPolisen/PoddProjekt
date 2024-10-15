@@ -19,7 +19,7 @@ namespace PoddProjekt
             _poddRepository = new PoddRepository();
         }
 
-        private void  AddPodd(string title, string author)
+        private void AddPodd(string title, string author)
         {
             Podd newPodd = new Podd
             {
@@ -32,9 +32,9 @@ namespace PoddProjekt
             MessageBox.Show("Podd tillagd");
         }
 
-        private void  ShowAllPodds()
+        private void ShowAllPodds()
         {
-            var podds =  _poddRepository.GetAllPodds();
+            var podds = _poddRepository.GetAllPodds();
             foreach (var podd in podds)
             {
                 listBoxPodds.Items.Add($"{podd.Id}: {podd.Title} av {podd.Author}");
@@ -46,5 +46,12 @@ namespace PoddProjekt
         {
 
         }
+
+        //private void SavePodds()
+        //{
+        //    var podds = _poddRepository.GetAllPodds().ToList(); // hämta alla poddar som en lista
+        //    string jsonString = jasonSerializer.Serialize(podds);
+        //    File.WriteAllText("podds.json", jsonString);
+        //}
     }
 }
