@@ -1,36 +1,30 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Models
 {
-    [Serializable] // Indikerar att klassen kan serialiseras
+    [Serializable]
     public class Category
     {
-        // Egenskap för kategoriens namn och ID
         public string Name { get; set; }
         public int Id { get; set; }
 
-        // Standardkonstruktor som initierar värden
         public Category()
         {
-            Name = string.Empty; // Sätter namnet till en tom sträng
-            Id = 0;              // Initierar ID till 0
+            Name = string.Empty;
+            Id = 0;
         }
 
-        // Konstruktor som tillåter initialisering av ID och namn
         public Category(int id, string name)
         {
-            Name = name; // Tilldelar det angivna namnet
-            Id = id;     // Tilldelar det angivna ID
+            Name = name;
+            Id = id;
         }
 
-        // Exempel på en metod för att få en beskrivning av kategorin
-        public string GetDescription()
-        {
-            return $"Kategori: {Name}, ID: {Id}";
-        }
-
-        // Andra relevanta metoder och egenskaper kan läggas till här...
+        // Andra relevanta egenskaper...
     }
 }
-
-

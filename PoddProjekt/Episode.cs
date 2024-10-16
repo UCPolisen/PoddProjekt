@@ -1,42 +1,34 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Models
 {
-    [Serializable] // Indikerar att klassen kan serialiseras
+    [Serializable]
     public class Episode
     {
-        // Egenskap för ID, endast läsbar
         private int ID { get; }
-
-        // Egenskaper för episodens titel, publiceringsdatum och beskrivning
         public string? Title { get; set; }
-        public DateTimeOffset ReleaseDate { get; set; }
+        public DateTimeOffset PublicationDate { get; set; }
         public string? Description { get; set; }
 
-        // Statisk variabel för att hålla nästa tillgängliga ID
-        private static int _nextId = 0;
+        private static int nextID = 0;
 
-        // Konstruktor för att skapa en ny episod med specifika värden
-        public Episode(string title, DateTimeOffset releaseDate, string description)
+        public Episode(string title, DateTimeOffset date, string description)
         {
             Title = title;
-            ReleaseDate = releaseDate;
+            PublicationDate = date;
             Description = description;
-            ID = _nextId++; // Här återställs raden till den ursprungliga formen
+            ID = nextID++;
         }
 
-        // Standardkonstruktor utan parametrar
         public Episode()
         {
-            // Kan användas för serialisering eller skapande av tom episod
         }
 
-        // Ytterligare metoder och egenskaper kan läggas till här...
-
-        // Exempel på en metod för att få en sammanfattning av episoden
-        public string GetSummary()
-        {
-            return $"Episod: {Title}, Publicerad: {ReleaseDate}, Beskrivning: {Description}";
-        }
+        // Andra relevanta egenskaper...
     }
 }
