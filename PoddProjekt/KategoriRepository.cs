@@ -1,4 +1,5 @@
-﻿using PoddProjekt;
+﻿using Models;
+using PoddProjekt;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,13 +48,13 @@ namespace DataAccessLayer.Repositories
             }
         }
 
-        public KategoriLista LoadCategoryList()
+        public CategoryList LoadCategoryList()
         {
-            var kategoriLista = new KategoriLista { Categories = new List<string>() };
+            var CategoryList = new CategoryList { Categories = new List<string>() };
 
             foreach (var podcast in GetAll())
             {
-                kategoriLista.Categories.Add(podcast.Namn);
+                CategoryList.Categories.Add(podcast.Namn);
             }
 
             return kategoriLista;
@@ -62,7 +63,7 @@ namespace DataAccessLayer.Repositories
         public void SaveCategoryList(KategoriLista kategoriLista)
         {
             podcasts.Clear();
-            foreach (var kategoriNamn in kategoriLista.Categories)
+            foreach (var kategoriNamn in CategoryList.Categories)
             {
                 podcasts.Add(new Podcast { Namn = kategoriNamn });
             }
@@ -85,9 +86,9 @@ namespace DataAccessLayer.Repositories
             }
         }
 
-        public Kategori GetById(int id)
+        public Category GetById(int id)
         {
-            var podcast = kategorier.FirstOrDefault(p => p.ID == id);
+            var podcast = Categorys.FirstOrDefault(p => p.ID == id);
             if (podcast == null)
             {
                 throw new Exception("Ingen podcast hittad med det angivna ID:t.");
