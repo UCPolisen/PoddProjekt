@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PoddProjekt
 {
@@ -15,6 +16,12 @@ namespace PoddProjekt
         public Form1()
         {
             InitializeComponent();
+
+            comboBox1.Items.Add("Humor");
+            comboBox1.Items.Add("Dokumentär");
+            comboBox1.Items.Add("Historia");
+            comboBox1.Items.Add("Skitsnack");
+
         }
     }
 }

@@ -63,7 +63,6 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Humor", "Dokumentär", "Historia", "Skitsnack" });
             comboBox1.Location = new System.Drawing.Point(142, 189);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new System.Drawing.Size(242, 40);
