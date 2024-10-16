@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace PoddProjekt
 {
-    internal class Validering
+    internal class Validation
     {
         public static Boolean vardeFinns(TextBox textboxAttValidera)
         {
