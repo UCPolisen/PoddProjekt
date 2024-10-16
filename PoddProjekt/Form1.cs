@@ -44,7 +44,7 @@ namespace PoddProjekt
         //vet ej  om metoden  nedan behövs
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void SavePodds()
@@ -57,6 +57,24 @@ namespace PoddProjekt
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Lägg till alternativ i ComboBox
+            comboBox1.Items.Add("https://example1.com");
+            comboBox1.Items.Add("https://example2.com");
+            comboBox1.Items.Add("https://example3.com");
         }
     }
 }
