@@ -13,7 +13,7 @@ namespace PoddProjekt
 {
     public partial class Kategorier : Form
     {
-            KategoriController kategoriController;
+            CategoryController categoryController;
             PodcastController podcastController;
             Startsida startsidan;
             public HanteraKategorier(Startsida startsida)
