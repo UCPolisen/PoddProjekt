@@ -28,22 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listBox1 = new System.Windows.Forms.ListBox();
+            listBoxKategorier = new System.Windows.Forms.ListBox();
             label1 = new System.Windows.Forms.Label();
-            label2 = new System.Windows.Forms.Label();
-            textBox1 = new System.Windows.Forms.TextBox();
-            button1 = new System.Windows.Forms.Button();
-            button2 = new System.Windows.Forms.Button();
+            textBoxNyEllerAndra = new System.Windows.Forms.TextBox();
+            btnBekfraftaNyKategori = new System.Windows.Forms.Button();
+            btnBekraftaAndradKategori = new System.Windows.Forms.Button();
+            btnAndraNamnKategori = new System.Windows.Forms.Button();
+            btnTaBortKategori = new System.Windows.Forms.Button();
+            btnAngra = new System.Windows.Forms.Button();
+            btnLaggTillNyKategori = new System.Windows.Forms.Button();
             SuspendLayout();
             // 
-            // listBox1
+            // listBoxKategorier
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 32;
-            listBox1.Location = new System.Drawing.Point(174, 180);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new System.Drawing.Size(240, 164);
-            listBox1.TabIndex = 0;
+            listBoxKategorier.FormattingEnabled = true;
+            listBoxKategorier.ItemHeight = 32;
+            listBoxKategorier.Location = new System.Drawing.Point(174, 180);
+            listBoxKategorier.Name = "listBoxKategorier";
+            listBoxKategorier.Size = new System.Drawing.Size(316, 196);
+            listBoxKategorier.TabIndex = 0;
             // 
             // label1
             // 
@@ -54,52 +57,81 @@
             label1.TabIndex = 1;
             label1.Text = "Kategorier:";
             // 
-            // label2
+            // textBoxNyEllerAndra
             // 
-            label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(516, 112);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(197, 32);
-            label2.TabIndex = 2;
-            label2.Text = "Ändra kategorier:";
+            textBoxNyEllerAndra.Location = new System.Drawing.Point(822, 252);
+            textBoxNyEllerAndra.Name = "textBoxNyEllerAndra";
+            textBoxNyEllerAndra.Size = new System.Drawing.Size(200, 39);
+            textBoxNyEllerAndra.TabIndex = 3;
             // 
-            // textBox1
+            // btnBekfraftaNyKategori
             // 
-            textBox1.Location = new System.Drawing.Point(719, 109);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new System.Drawing.Size(200, 39);
-            textBox1.TabIndex = 3;
-            textBox1.Text = "Kategorinamn";
+            btnBekfraftaNyKategori.Location = new System.Drawing.Point(719, 327);
+            btnBekfraftaNyKategori.Name = "btnBekfraftaNyKategori";
+            btnBekfraftaNyKategori.Size = new System.Drawing.Size(202, 78);
+            btnBekfraftaNyKategori.TabIndex = 4;
+            btnBekfraftaNyKategori.Text = "Lägg till kategori";
+            btnBekfraftaNyKategori.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnBekraftaAndradKategori
             // 
-            button1.Location = new System.Drawing.Point(563, 180);
-            button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(150, 46);
-            button1.TabIndex = 4;
-            button1.Text = "Lägg till";
-            button1.UseVisualStyleBackColor = true;
+            btnBekraftaAndradKategori.Location = new System.Drawing.Point(946, 335);
+            btnBekraftaAndradKategori.Name = "btnBekraftaAndradKategori";
+            btnBekraftaAndradKategori.Size = new System.Drawing.Size(220, 62);
+            btnBekraftaAndradKategori.TabIndex = 5;
+            btnBekraftaAndradKategori.Text = "Bekräfta namn";
+            btnBekraftaAndradKategori.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnAndraNamnKategori
             // 
-            button2.Location = new System.Drawing.Point(754, 180);
-            button2.Name = "button2";
-            button2.Size = new System.Drawing.Size(150, 46);
-            button2.TabIndex = 5;
-            button2.Text = "Ta bort";
-            button2.UseVisualStyleBackColor = true;
+            btnAndraNamnKategori.Location = new System.Drawing.Point(176, 443);
+            btnAndraNamnKategori.Name = "btnAndraNamnKategori";
+            btnAndraNamnKategori.Size = new System.Drawing.Size(181, 77);
+            btnAndraNamnKategori.TabIndex = 6;
+            btnAndraNamnKategori.Text = "Ändra namn";
+            btnAndraNamnKategori.UseVisualStyleBackColor = true;
+            // 
+            // btnTaBortKategori
+            // 
+            btnTaBortKategori.Location = new System.Drawing.Point(430, 442);
+            btnTaBortKategori.Name = "btnTaBortKategori";
+            btnTaBortKategori.Size = new System.Drawing.Size(188, 78);
+            btnTaBortKategori.TabIndex = 7;
+            btnTaBortKategori.Text = "Ta bort kategori";
+            btnTaBortKategori.UseVisualStyleBackColor = true;
+            // 
+            // btnAngra
+            // 
+            btnAngra.Location = new System.Drawing.Point(979, 442);
+            btnAngra.Name = "btnAngra";
+            btnAngra.Size = new System.Drawing.Size(150, 46);
+            btnAngra.TabIndex = 8;
+            btnAngra.Text = "Ångra";
+            btnAngra.UseVisualStyleBackColor = true;
+            // 
+            // btnLaggTillNyKategori
+            // 
+            btnLaggTillNyKategori.Location = new System.Drawing.Point(842, 117);
+            btnLaggTillNyKategori.Name = "btnLaggTillNyKategori";
+            btnLaggTillNyKategori.Size = new System.Drawing.Size(150, 46);
+            btnLaggTillNyKategori.TabIndex = 9;
+            btnLaggTillNyKategori.Text = "Lägg till ny kategori";
+            btnLaggTillNyKategori.UseVisualStyleBackColor = true;
             // 
             // Kategorier
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1054, 455);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
-            Controls.Add(label2);
+            ClientSize = new System.Drawing.Size(1235, 722);
+            Controls.Add(btnLaggTillNyKategori);
+            Controls.Add(btnAngra);
+            Controls.Add(btnTaBortKategori);
+            Controls.Add(btnAndraNamnKategori);
+            Controls.Add(btnBekraftaAndradKategori);
+            Controls.Add(btnBekfraftaNyKategori);
+            Controls.Add(textBoxNyEllerAndra);
             Controls.Add(label1);
-            Controls.Add(listBox1);
+            Controls.Add(listBoxKategorier);
             Name = "Kategorier";
             Text = "Kategorier";
             ResumeLayout(false);
@@ -108,11 +140,15 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBoxKategorier;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBoxNyEllerAndra;
+        private System.Windows.Forms.Button btnBekfraftaNyKategori;
+        private System.Windows.Forms.Button btnBekraftaAndradKategori;
+        private System.Windows.Forms.Button btnAndraNamnKategori;
+        private System.Windows.Forms.Button btnTaBortKategori;
+        private System.Windows.Forms.Button btnAngra;
+        private System.Windows.Forms.Button btnLaggTillNyKategori;
     }
 }
