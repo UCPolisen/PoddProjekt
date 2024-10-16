@@ -23,5 +23,15 @@ namespace PoddProjekt
             comboBox1.Items.Add("Skitsnack");
 
         }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
