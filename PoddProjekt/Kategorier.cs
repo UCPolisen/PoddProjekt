@@ -15,7 +15,6 @@ namespace PoddProjekt
     {
             CategoryController categoryController;
             PodcastController podcastController;
-            Startsida startsidan;
             public HanteraKategorier(Startsida startsida)
             {
                 InitializeComponent();
