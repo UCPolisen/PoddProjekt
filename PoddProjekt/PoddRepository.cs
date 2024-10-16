@@ -15,34 +15,6 @@ namespace PoddProjekt
             podds.Add(podd);
         }
 
-        public Podd GetPodd(int id)
-        {
-            return podds.First(b => b.Id == id);
-        }
-
-        public IEnumerable<Podd> GetAllPodds()
-        {
-            return podds;
-        }
-
-        public void UpdatePodd(Podd podd)
-        {
-            var  existingPodd = GetPodd(podd.Id);
-            if (existingPodd != null)
-            {
-                existingPodd.Title = podd.Title;
-                existingPodd.Author = podd.Author;
-            }
-        }
-
-        public void DeletePodd(int id)
-        {
-            var podd = GetPodd(id);
-            if (podd != null)
-            {
-                podds.Remove(podd);
-            }
-        }
 
     }
 }
