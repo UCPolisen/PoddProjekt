@@ -47,11 +47,16 @@ namespace PoddProjekt
 
         }
 
-        //private void SavePodds()
-        //{
-        //    var podds = _poddRepository.GetAllPodds().ToList(); // hämta alla poddar som en lista
-        //    string jsonString = jasonSerializer.Serialize(podds);
-        //    File.WriteAllText("podds.json", jsonString);
-        //}
+        private void SavePodds()
+        {
+            var podds = _poddRepository.GetAllPodds().ToList(); // hämta alla poddar som en lista
+            string jsonString = jasonSerializer.Serialize(podds);
+            File.WriteAllText("podds.json", jsonString);
+        }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
