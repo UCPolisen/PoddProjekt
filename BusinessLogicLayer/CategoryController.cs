@@ -14,11 +14,11 @@ namespace BusinessLogicLayer.Controllers
     {
         private const int INITIAL_ID = 1;
 
-        IRepository<Category> _repository;
+        HuvudRepository<Category> _repository;
 
         public CategoryController()
         {
-            _repository = new CategoryRepository();
+            _repository = new KategoriRepository();
         }
 
         public void AddCategory(string name)
