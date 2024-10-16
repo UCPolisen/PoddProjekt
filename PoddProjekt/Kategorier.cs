@@ -19,7 +19,7 @@ namespace PoddProjekt
             public HanteraKategorier(Startsida startsida)
             {
                 InitializeComponent();
-                kategoriController = new KategoriController();
+                categoryController = new CategoryController();
                 podcastController = new PodcastController();
                 startsidan = startsida;
                 fyllMedKategorier();
@@ -31,7 +31,7 @@ namespace PoddProjekt
 
                 listBoxKategorier.Items.Clear();
 
-                foreach (Kategori item in kategorier)
+                foreach (Category item in kategorier)
                 {
                     string kategori = item.Namn;
                     listBoxKategorier.Items.Add(kategori);

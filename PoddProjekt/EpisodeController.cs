@@ -10,9 +10,9 @@ namespace BusinessLogicLayer.Controllers
 {
     public class EpisodeController
     {
-        private readonly IRepository<Episode> _repository;
+        private readonly HuvudRepository<Episode> _repository;
 
-        public EpisodeController(IRepository<Episode> repository)
+        public EpisodeController(HuvudRepository<Episode> repository)
         {
             _repository = repository;
         }
