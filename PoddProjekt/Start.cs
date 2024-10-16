@@ -17,10 +17,6 @@ namespace PoddProjekt
         {
             InitializeComponent();
 
-            comboBox1.Items.Add("Humor");
-            comboBox1.Items.Add("Dokumentär");
-            comboBox1.Items.Add("Historia");
-            comboBox1.Items.Add("Skitsnack");
 
         }
 
