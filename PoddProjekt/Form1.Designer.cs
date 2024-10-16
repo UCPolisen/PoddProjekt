@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             splitContainer1 = new System.Windows.Forms.SplitContainer();
+            Button1 = new System.Windows.Forms.Button();
             comboBox1 = new System.Windows.Forms.ComboBox();
             label4 = new System.Windows.Forms.Label();
             textBox2 = new System.Windows.Forms.TextBox();
@@ -49,6 +50,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            splitContainer1.Panel1.Controls.Add(Button1);
             splitContainer1.Panel1.Controls.Add(comboBox1);
             splitContainer1.Panel1.Controls.Add(label4);
             splitContainer1.Panel1.Controls.Add(textBox2);
@@ -56,9 +58,18 @@
             splitContainer1.Panel1.Controls.Add(label2);
             splitContainer1.Panel1.Controls.Add(textBox1);
             splitContainer1.Panel1.Controls.Add(label1);
-            splitContainer1.Size = new System.Drawing.Size(1681, 859);
-            splitContainer1.SplitterDistance = 560;
+            splitContainer1.Size = new System.Drawing.Size(1624, 1091);
+            splitContainer1.SplitterDistance = 541;
             splitContainer1.TabIndex = 0;
+            // 
+            // Button1
+            // 
+            Button1.Location = new System.Drawing.Point(194, 250);
+            Button1.Name = "Button1";
+            Button1.Size = new System.Drawing.Size(150, 46);
+            Button1.TabIndex = 6;
+            Button1.Text = "Lägg till";
+            Button1.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
@@ -122,7 +133,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1681, 859);
+            ClientSize = new System.Drawing.Size(1624, 1091);
             Controls.Add(splitContainer1);
             Name = "Form1";
             Text = "Form1";
@@ -143,5 +154,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Button1;
     }
 }
